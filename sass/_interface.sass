@@ -1,0 +1,48 @@
+*
+  box-sizing: border-box
+body
+  margin: 0
+  padding: 0
+  font-size: 16px
+  color: $text_color
+  font-family: 'Asap Regular', sans-serif
+
+.button
+  padding: 19px 30px
+  +medium
+  font-weight: 700
+  text-transform: uppercase
+  background-color: #fff
+  border: none
+  box-shadow: 0 18px 27px 2px rgba(0, 0, 0, 0.1)
+  &:hover
+    cursor: pointer
+.button-o
+  padding: 18px 47px
+  +medium
+  font-weight: 700
+  text-transform: uppercase
+  background-color: transparent
+  border: 1px solid $text_color
+  &:hover
+    cursor: pointer
+
+.section-title
+  text-align: center
+  +medium
+  font-weight: 700
+  font-size: 46px
+  opacity: 0.8
+  line-height: 49px
+  text-transform: uppercase
+  &:before
+    content: ""
+    display: block
+    position: relative
+    top: -15px
+    left: 50%
+    transform: translateX(-50%)
+    width: 60px
+    height: 4px
+    background-color: #212121
+    opacity: 0.6

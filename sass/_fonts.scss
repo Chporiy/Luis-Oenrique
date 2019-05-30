@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Asap Medium';
+    src: url('../fonts/Asap-Medium.eot');
+    src: url('../fonts/Asap-Medium.eot') format('embedded-opentype'),
+        url('../fonts/Asap-Medium.woff') format('woff'),
+        url('../fonts/Asap-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Asap Regular';
+    src: url('../fonts/Asap-Regular.eot');
+    src: url('../fonts/Asap-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Asap-Regular.woff') format('woff'),
+        url('../fonts/Asap-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin medium {
+  font-family: 'Asap Medium';
+}
+@mixin regular {
+  font-family: 'Asap Regular';
+}
