@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //   console.log(response.text());
     //   alert(response.text());      
     // });
-    fetch("../send.php", {
+    fetch("Luis-Oenrique/send.php", {
       method: "POST",
       body: new FormData(form)
     })
