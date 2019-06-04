@@ -78,4 +78,35 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollBy(0, section.getBoundingClientRect().top / 20 - 3);
     }, 1500);
   });
+
+  // Отправка данных на почту
+  let form = document.querySelector(".form"),
+    name = document.querySelector(".form__name"),
+    email = document.querySelector(".form__email"),
+    message = document.querySelector(".form__message"),
+    formButton = document.querySelector(".form__button");
+
+  formButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    // fetch("../send.php", {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify({
+    //     name: name.value,
+    //     email: email.value,
+    //     message: message.value
+    //   })
+    // }).then(function (response) {
+    //   console.log(response.text());
+    //   alert(response.text());      
+    // });
+    fetch("../send.php", {
+      method: "POST",
+      body: new FormData(form)
+    })
+  }); 
+    
+
 });
