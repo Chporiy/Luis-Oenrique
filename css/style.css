@@ -108,7 +108,7 @@ body {
 }
 
 .header {
-  background: #dedede url("../../img/header/header-bg.jpg") no-repeat center center;
+  background: #dedede url("../img/header/header-bg.jpg") no-repeat center center;
   background-size: cover;
 }
 
@@ -470,7 +470,7 @@ body {
 
 .footer {
   margin-top: 150px;
-  background: #f6f6f6 url("../../img/footer/footer-bg.jpg") no-repeat center center;
+  background: #f6f6f6 url("../img/footer/footer-bg.jpg") no-repeat center center;
   background-size: cover;
 }
 
